@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --body-font: "Montserrat Alternates", sans-serif;
+    --normal-font-size: 0.938rem;
+    --font-regular: 400;
+    --white-color: #fff;
+    --darkest-green-color: #2D332E;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-regular);
+    color: var(--white-color);
+}
+
+.background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: var(--darkest-green-color)
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-container{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.right-container{
+    width: 50vw;
+    height: 100vh;
+    background: url(planta.jpg);
+    background-size: cover;
+}
