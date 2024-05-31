@@ -1,45 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="signin.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <div class="background">
-        <div class="container">
-            <div class="left-container">
-                <div class="login-box">
-                    <div class="login-info">
-                        <h1 class="login-title">LOGIN</h1>
-                        <p class="">Faça login para uma melhor usuabilidade do nosso site</p>
-                    </div>
-                    <div class="login-cadastro">
-                        <form action="index.html" method="post">
+    <div class="container">
+        <div class="left-container">
+            <div class="login-box">
+                <div class="login-info">
+                    <h1 class="login-title">LOGIN</h1>
+                    <p class="">Nos conte quem é você</p>
+                </div>
+                <div class="login-cadastro">
+                    <form action="func-login.php" method="post">
 
-                            <div class="textfield">
-                                <input type="email" name="email" placeholder="">
-                                <label for="email">Email</label>
-                            </div>
+                        <div class="textfield">
+                            <input required type="email" id="email" name="email" placeholder="" autocomplete="on">
+                            <label for="email">Email</label>
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
 
-                            <div class="textfield">
-                                <input type="password" name="senha" placeholder="">
-                                <label for="senha">Senha</label>
-                            </div>
+                        <div class="textfield">
+                            <input required type="password" id="senha" name="senha" placeholder="">
+                            <label for="senha">Senha</label>
+                            <ion-icon name="lock-closed-outline" onclick="ViewPass()" id="bnt-pass"></ion-icon>
+                        </div>
 
-                            <div class="textfield">
-                                <input type="submit" value="Cadastrar">
-                            </div>
-                        </form>
-                    </div>
+                        <div class="textfield3">
+                            <input type="submit" value="Entrar">
+                        </div>
+                    </form>
                 </div>
             </div>
+        </div>
 
-            <div class="right-container">
-            
+        <div class="right-container">
+            <div class="cadastro-box">
+                <div class="cadastro-info">
+                    <h1 class="cadastro-title">Cadastro</h1>
+                    <p class="">Faça seu cadastro para aproveitar o melhor do nosso site</p>
+                </div>
+                <div class="login-cadastro">
+                    <form action="func-cadastro.php" method="post">
+
+                        <div class="textfield">
+                            <input required type="text" id="usuario" name="usuario" placeholder="">
+                            <label for="usuario">Usuário</label>
+                            <ion-icon name="person-outline"></ion-icon>
+                        </div>
+
+                        <div class="textfield">
+                            <input required type="email" id="email" name="email" placeholder="">
+                            <label for="email">Email</label>
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+
+                        <div class="textfield">
+                            <input required type="password" id="senha2" name="senha" placeholder="">
+                            <label for="senha">Senha</label>
+                            <ion-icon name="lock-closed-outline" onclick="ViewPass2()" id="bnt-pass2"></ion-icon>
+                        </div>
+
+                        <div class="textfield3">
+                            <input type="submit" value="Cadastrar">
+                            <div>
+                                Já tem conta?
+                                <a href="signin.php">Entrar</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
