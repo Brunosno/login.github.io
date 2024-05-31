@@ -19,13 +19,13 @@
                     <form action="func-login.php" method="post">
 
                         <div class="textfield">
-                            <input required type="email" id="email" name="email" placeholder="" autocomplete="on">
+                            <input required type="email" id="email" name="email" placeholder="" autocomplete="off">
                             <label for="email">Email</label>
                             <ion-icon name="mail-outline"></ion-icon>
                         </div>
 
                         <div class="textfield">
-                            <input required type="password" id="senha" name="senha" placeholder="">
+                            <input required type="password" id="senha" name="senha" placeholder="" autocomplete="off">
                             <label for="senha">Senha</label>
                             <ion-icon name="lock-closed-outline" onclick="ViewPass()" id="bnt-pass"></ion-icon>
                         </div>
@@ -48,19 +48,19 @@
                     <form action="func-cadastro.php" method="post">
 
                         <div class="textfield">
-                            <input required type="text" id="usuario" name="usuario" placeholder="">
+                            <input required type="text" id="usuario" name="usuario" placeholder="" autocomplete="off">
                             <label for="usuario">Usuário</label>
                             <ion-icon name="person-outline"></ion-icon>
                         </div>
 
                         <div class="textfield">
-                            <input required type="email" id="email" name="email" placeholder="">
+                            <input required type="email" id="email" name="email" placeholder="" autocomplete="off">
                             <label for="email">Email</label>
                             <ion-icon name="mail-outline"></ion-icon>
                         </div>
 
                         <div class="textfield">
-                            <input required type="password" id="senha2" name="senha" placeholder="">
+                            <input required type="password" id="senha2" name="senha" placeholder="" autocomplete="off">
                             <label for="senha">Senha</label>
                             <ion-icon name="lock-closed-outline" onclick="ViewPass2()" id="bnt-pass2"></ion-icon>
                         </div>
@@ -76,7 +76,7 @@
                 </div>
             </div>
         </div>
-    <script src="script.js"></script>
+    <script src="../js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
